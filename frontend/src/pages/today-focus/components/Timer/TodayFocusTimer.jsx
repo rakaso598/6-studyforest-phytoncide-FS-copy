@@ -14,7 +14,6 @@ const TodayFocusTimer = ({ rewardPointSetByTime }) => {
 
   // 페이지 이동 시 state 초기화
   useEffect(() => {
-    console.log(timerState);
     return () => {
       setTimerState((prevState) => {
         const resetState = Object.keys(prevState).reduce((acc, key) => {
