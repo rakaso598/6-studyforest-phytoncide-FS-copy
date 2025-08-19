@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "server": "node ./src/app.js",
-    "dev": "nodemon ./src/app.js"
+    "dev": "nodemon ./src/app.js",
+    "seed": "prisma generate && prisma migrate deploy && prisma db seed"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +28,7 @@
     "typescript": "^5.8.2"
   },
   "prisma": {
-    "schema": "./src/db/prisma/schema.prisma"
+    "schema": "./src/db/prisma/schema.prisma",
+    "seed": "node ./src/db/prisma/seed.js"
   }
 }

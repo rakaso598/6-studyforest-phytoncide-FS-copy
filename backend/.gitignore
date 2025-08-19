@@ -8,6 +8,3 @@ node_modules
 *.http
 .http
 
-### mock seed.js 제외
-mock
-seed.js
