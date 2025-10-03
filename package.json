@@ -1,0 +1,9 @@
+{
+  "name": "studyforest-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "docker:build": "docker build -t studyforest-app .",
+    "docker:run": "docker run -p 8080:8080 --env-file .env studyforest-app"
+  }
+}
