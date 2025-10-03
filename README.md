@@ -1,5 +1,7 @@
 # 🚀 **프로젝트 소개**
 
+<img height="600" alt="이미지" src="http://rakaso598.github.io/portfolio/study-forest/images/공부의숲_배포_메인화면.png" />
+
 ## **구현 홈페이지**
 
 [배포 홈페이지 바로가기 | ✅ 2025-10-03 배포 확인](https://studyforest-phytoncide-fs-copy-173411279831.asia-northeast3.run.app)
