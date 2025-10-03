@@ -31,7 +31,7 @@
 
 5. 서버가 실행된 채로 새로운 콘솔을 하나 더 엽니다.
 
-6. 새로운 콘솔에서 `curl http://localhost:5090/health-check`  
+6. 새로운 콘솔에서 `curl http://localhost:8080/health-check`  
    헬스체크 요청을 보냅니다. (`curl`은 콘솔에서 간단한 GET request를 보내는 명령어입니다.)
 
 7. 새로운 콘솔에 `헬스체크 성공!`이 뜨고, 서버 콘솔에서 `OK`가 보이면 초기화 완료입니다.
@@ -83,7 +83,7 @@
 - `src/db/prisma/schema.prisma` : 프리즈마 ORM에서 사용하는 스키마 모델. 기본적인 DB 모델을 설계할 수 있습니다.
 - `src/middlewares/errorHandler.module.js` : 서버 내부 에러 발생 시 기본적인 500 서버 에러를 발생시키는 미들웨어입니다.
 - `src/modules/index.module.js` : 라우팅을 위한 기본 루트 경로. 여기에서 `user.module.js`나 `study.module.js` 등을 불러와 사용합니다.
-- `src/modules/healthCheck.module.js` : 프로젝트 초기화 시 헬스체크를 위한 모듈입니다. `npm install` 후 `npm run dev`로 서버를 실행하고, `curl http://localhost:5090/health-check` 명령어로 헬스체크를 실행합니다.
+- `src/modules/healthCheck.module.js` : 프로젝트 초기화 시 헬스체크를 위한 모듈입니다. `npm install` 후 `npm run dev`로 서버를 실행하고, `curl http://localhost:8080/health-check` 명령어로 헬스체크를 실행합니다.
 
 ---
 
