@@ -1,0 +1,10 @@
+# Backend Dockerfile
+FROM node:20-alpine
+WORKDIR /app
+COPY backend/package.json backend/package-lock.json ./
+RUN npm install --production
+COPY backend ./
+# Prisma generate (필요시)
+RUN npx prisma generate
+EXPOSE 5090
+CMD ["npm", "run", "server"]
