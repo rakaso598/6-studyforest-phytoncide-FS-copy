@@ -22,7 +22,7 @@ services:
     depends_on:
       - db
     ports:
-      - "5090:5090"
+      - "8080:8080"
     restart: always
 
   frontend:
@@ -30,7 +30,7 @@ services:
       context: .
       dockerfile: Dockerfile.frontend
     environment:
-      VITE_API_URL: http://localhost:5090
+      VITE_API_URL: http://localhost:8080
     depends_on:
       - backend
     ports:

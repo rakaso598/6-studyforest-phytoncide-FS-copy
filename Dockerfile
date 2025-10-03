@@ -28,5 +28,5 @@ WORKDIR /app/backend
 # Prisma generate (필요시)
 RUN npx prisma generate
 
-EXPOSE 5090
+EXPOSE 8080
 CMD ["npm", "run", "server"]

@@ -4,7 +4,7 @@
 
 ```
 # API 서버 주소 (백엔드 주소)
-VITE_API_URL=http://localhost:5090
+VITE_API_URL=http://localhost:8080
 ```
 
 - 실제 배포 시에는 API 서버 주소를 운영 환경에 맞게 변경하세요.
